@@ -136,7 +136,7 @@ window.dom = {
   },
   each(nodeList, fn) {
     for (let i = 0; i < nodeList.length; i++) {
-      fn.call(null, nodeList[i]); // ?
+      fn.call(null, nodeList[i]); // this是null，n是nodeList[i]
     }
   },
   index(node) {
